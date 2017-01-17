@@ -1,0 +1,20 @@
+1. yum install gcc python-devel openssl-devel virt* libguestfs virtio-win* virt-v2v*
+2. pip install shade  python-openstackclient
+3. clouds.yml
+clouds:
+    myfavoriteopenstack:
+        auth:
+            auth_url: http://172.16.130.25:35357
+            username: admin
+            password: 'admin'
+            project_name: "admin"
+            domain_name: default
+        region_name: RegionOne
+
+4. vim ~/.migration/migration.conf
+    [DEFAULT]
+    vcenter_host = 172.16.140.31
+    vcenter_user = root
+    password_file = /root/password
+    Datacenter_url = datacenter/compute0
+    esxi_host = 172.16.140.33
