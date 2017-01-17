@@ -1,0 +1,17 @@
+clouds:
+    Testing:
+        auth:
+            auth_url: http://172.16.50.86:35357
+            username: admin
+            password: 'admin'
+            project_name: "Testing"
+            domain_name: default
+        region_name: RegionOne
+    Development:
+        auth:
+            auth_url: http://172.16.50.86:35357
+            username: admin
+            password: 'admin'
+            project_name: "Development"
+            domain_name: default
+        region_name: RegionOne
